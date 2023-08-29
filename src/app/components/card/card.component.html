@@ -1,10 +1,14 @@
 <a href="#" class="card__container">
     <img
         class="card__img"
-        src="assets/bt-5.jpg"
+        [src]="gameCover"
         alt=""
     >
     <ng-template [ngIf]="gameLabel">
         <app-card-label [gameLabel]="gameLabel"></app-card-label>
     </ng-template>
+    <app-card-pricing
+        [gamePrice]="gamePrice"
+        [gameType]="gameType"
+    ></app-card-pricing>
 </a>
